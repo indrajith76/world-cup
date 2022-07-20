@@ -366,7 +366,7 @@ footer ul:nth-child(4) li a {
 /*------------------------------------------
    Responsive design for small device(index.html) 
 ------------------------------------------ */
-@media screen and (max-width:688px) {
+@media screen and (max-width:576px) {
     .top-banner {
         flex-direction: column;
     }
@@ -460,7 +460,7 @@ footer ul:nth-child(4) li a {
 /*------------------------------------------
    Responsive design for medium device(index.html) 
 ------------------------------------------ */
-@media screen and (min-width:688px) and (max-width: 992px) {
+@media screen and (min-width:577px) and (max-width: 768px) {
     .top-banner {
         height: 360px;
         padding: 20px 20px 0 50px;
@@ -552,7 +552,7 @@ footer ul:nth-child(4) li a {
 /*------------------------------------------
    Responsive design for small device(match.html) 
 ------------------------------------------ */
-@media screen and (max-width:688px) {
+@media screen and (max-width:576px) {
     
     .top-banner-match {
         flex-direction: column;
