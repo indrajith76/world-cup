@@ -204,6 +204,10 @@ main {
     margin-right: 8px;
 }
 
+.view-all-btn {
+    display: none;
+}
+
 /* -------footer style-------- */
 footer {
     padding: 130px 130px 130px 130px;
@@ -362,7 +366,7 @@ footer ul:nth-child(4) li a {
 /*------------------------------------------
    Responsive design for small device(index.html) 
 ------------------------------------------ */
-@media only screen and (max-width:576px) {
+@media screen and (max-width:688px) {
     .top-banner {
         flex-direction: column;
     }
@@ -453,8 +457,93 @@ footer ul:nth-child(4) li a {
     }
 }
 
+/*------------------------------------------
+   Responsive design for medium device(index.html) 
+------------------------------------------ */
+@media screen and (min-width:688px) and (max-width: 992px) {
+    .top-banner {
+        height: 360px;
+        padding: 20px 20px 0 50px;
+    }
 
+    .banner-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0;
+    }
 
+    .banner-text p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin-bottom: 50px;
+    }
+
+    .banner-img img {
+        width: 346px;
+    }
+
+    .ball {
+        position: absolute;
+        width: 100px;
+        opacity: .84;
+        top: 140px;
+        left: 210px;
+    }
+
+    /* ---blog container--- */
+    .blog-container {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .side-manu {
+        background: none;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .manu-btn {
+        border: 1px solid #a8a8a8;
+    }
+
+    /* ----blogs style-----  */
+    .blogs {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+
+    .blog {
+        width: auto;
+    }
+
+    .blog:nth-last-child(2) {
+        display: none;
+    }
+
+    .view-all-btn {
+        display: block;
+        background: #dd0000;
+        height: 47px;
+        width: 131px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 47px;
+        margin: 0 auto;
+    }
+
+    .view-all-btn a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    footer :nth-child(3) {
+        flex-wrap: wrap;
+    }
+}
 
 
 
@@ -463,7 +552,7 @@ footer ul:nth-child(4) li a {
 /*------------------------------------------
    Responsive design for small device(match.html) 
 ------------------------------------------ */
-@media only screen and (max-width:576px) {
+@media screen and (max-width:688px) {
     
     .top-banner-match {
         flex-direction: column;
