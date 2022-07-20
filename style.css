@@ -31,6 +31,8 @@ main {
     color: #FFFFFF;
     margin: 0 0 10px 0;
     font-weight: 700;
+    position: relative;
+    z-index: 1;
 }
 
 .banner-text p {
@@ -69,9 +71,9 @@ main {
 
 .ball {
     position: absolute;
-    width: 170px;
+    width: 165px;
     opacity: .84;
-    top: 100px;
+    top: 150px;
     left: 510px;
 }
 
