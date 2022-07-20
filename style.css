@@ -11,7 +11,7 @@ main {
 
 /* ----top banner styles---- */
 .top-banner {
-    background: #161616;
+    background: #054082;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ main {
 }
 
 .banner-text {
-    width: 475px;
+    width: 485px;
     padding: 0 0 40px 0;
 }
 
@@ -35,7 +35,7 @@ main {
 .banner-text p {
     font-size: 16px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: 200;
     color: #FFFFFF;
     margin-bottom: 40px;
 }
@@ -66,13 +66,6 @@ main {
     width: 529px;
 }
 
-.ball2 {
-    position: absolute;
-    width: 100px;
-    left: 1145px;
-    top: 515px;
-}
-
 .ball {
     position: absolute;
     width: 170px;
@@ -81,7 +74,7 @@ main {
     left: 510px;
 }
 
-.ball, .ball2 {
+.ball {
     animation: ball 1.5s linear infinite;
 }
 
@@ -105,7 +98,7 @@ main {
 .side-manu {
     width: 312px;
     height: 312px;
-    background: #161616;
+    background: #054082;
     border-radius: 10px;
 
     display: flex;
@@ -122,6 +115,10 @@ main {
     text-align: center;
     line-height: 64px;
     border-radius: 5px;
+}
+
+.manu-btn:hover {
+    box-shadow: 1px 1px 10px white;
 }
 
 .active-btn {
@@ -209,7 +206,7 @@ main {
 /* -------footer style-------- */
 footer {
     padding: 130px 130px 130px 130px;
-    background: #161616;
+    background: #054082;
 }
 
 footer h2 {
@@ -239,4 +236,102 @@ footer a {
     line-height: 24px;
     font-weight: 500;
     color: #B9B9B9;
+}
+
+
+/* -------------------------------
+    style for match.html file 
+   ------------------------------- */
+
+/* top banner style */
+.top-banner-match {
+    background: #084561;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+    border-radius: 30px;
+    padding: 20px 50px 0 50px;
+}
+
+.match-banner-btn {
+    background: #df083e;
+}
+
+.match-banner-btn:hover {
+    background: #d6063a;
+    box-shadow: 0px 2px 8px #79013d;
+}
+
+.ball2 {
+    position: absolute;
+    width: 100px;
+    left: 1145px;
+    top: 515px;
+}
+
+.ball2 {
+    animation: ball 1.5s linear infinite;
+}
+
+/* -----Match style---- */
+.match-container {
+    margin: 100px 0 100px 0;
+    display: flex;
+    gap: 20px;
+}
+
+/*------- matchs ------- */
+.match-manu-color{
+    background: #084561;
+}
+
+.match-active-btn {
+    background: #df083e;
+}
+
+.matchs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.match {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #dbdbdb;
+    border-radius: 11px;
+    padding: 30px 15px 30px 15px;
+}
+
+.team {
+    display: flex;
+    gap: 20px;
+}
+
+.match img {
+    width: 100%;
+}
+
+.match-info {
+    padding: 10px 15px 15px 15px;
+}
+
+.match-info h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.match-time {
+    text-align: center;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+/* --------footer style -------- */
+.match-footer-color {
+    background: #084561;
 }
