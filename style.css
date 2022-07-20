@@ -364,7 +364,7 @@ footer ul:nth-child(4) li a {
 
 
 /*------------------------------------------
-   Responsive design for small device(index.html) 
+   Responsive design for X-Small device(index.html) 
 ------------------------------------------ */
 @media screen and (max-width:576px) {
     .top-banner {
@@ -458,7 +458,7 @@ footer ul:nth-child(4) li a {
 }
 
 /*------------------------------------------
-   Responsive design for medium device(index.html) 
+   Responsive design for Small device(index.html) 
 ------------------------------------------ */
 @media screen and (min-width:577px) and (max-width: 768px) {
     .top-banner {
@@ -523,7 +523,7 @@ footer ul:nth-child(4) li a {
         display: none;
     }
 
-    .view-all-btn {
+    .blog-container .view-all-btn {
         display: block;
         background: #dd0000;
         height: 47px;
@@ -540,17 +540,113 @@ footer ul:nth-child(4) li a {
         color: #FFFFFF;
     }
 
+    footer {
+        padding: 30px 130px 30px 130px;
+    }
+
     footer :nth-child(3) {
         flex-wrap: wrap;
     }
 }
 
 
+/*------------------------------------------
+   Responsive design for Medium device(index.html) 
+------------------------------------------ */
+@media screen and (min-width:769px) and (max-width: 992px) {
+    .top-banner {
+        height: 398px;
+        padding: 20px 20px 0 40px;
+    }
 
+    .banner-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0 13px 0 0;
+    }
+
+    .banner-text p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin-bottom: 50px;
+    }
+
+    .banner-img img {
+        width: 383px;
+    }
+
+    .ball {
+        position: absolute;
+        width: 100px;
+        opacity: .84;
+        top: 120px;
+        left: 330px;
+    }
+
+    /* ---blog container--- */
+    .blog-container {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .side-manu {
+        background: none;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .manu-btn {
+        border: 1px solid #a8a8a8;
+    }
+
+    /* ----blogs style-----  */
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+    }
+
+    .blog {
+        width: auto;
+        height: 416px;
+    }
+
+    .blog:nth-last-child(2) {
+        display: none;
+    }
+
+    .blog-container .view-all-btn {
+        display: block;
+        background: #dd0000;
+        height: 47px;
+        width: 131px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 47px;
+        margin: 0 auto;
+    }
+
+    .view-all-btn a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    footer {
+        padding: 30px 130px 30px 130px;
+    }
+
+    footer :nth-child(3) {
+        flex-wrap: wrap;
+    }
+}
 
 
 /*------------------------------------------
-   Responsive design for small device(match.html) 
+   Responsive design for X-Small device(match.html) 
 ------------------------------------------ */
 @media screen and (max-width:576px) {
     
@@ -592,5 +688,171 @@ footer ul:nth-child(4) li a {
         font-size: 15px;
         line-height: 30px;
         color: #084561;
+    }
+}
+
+/*------------------------------------------
+   Responsive design for Small device(match.html) 
+------------------------------------------ */
+@media screen and (min-width:577px) and (max-width: 768px) {
+    .top-banner-match {
+        height: 360px;
+        padding: 20px 20px 0 50px;
+    }
+
+    .top-banner-match h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    .top-banner-match p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin-bottom: 50px;
+    }
+
+    .banner-img2 img {
+        width: 309px;
+    }
+
+    .ball2 {
+        position: absolute;
+        width: 70px;
+        opacity: .84;
+        top: 337px;
+        left: 643px;
+    }
+
+    /* ---match container--- */
+    .match-container {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .side-manu {
+        background: none;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .manu-btn {
+        border: 1px solid #a8a8a8;
+    }
+
+    /* ----matchs style-----  */
+    .matchs {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+
+    .match {
+        width: auto;
+    }
+
+    .match-container .view-all-btn {
+        display: block;
+        background: #df083e;
+        height: 47px;
+        width: 131px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 47px;
+        margin: 0 auto;
+    }
+
+    .view-all-btn a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    footer :nth-child(3) {
+        flex-wrap: wrap;
+    }
+}
+
+
+/*------------------------------------------
+   Responsive design for Medium device(match.html) 
+------------------------------------------ */
+@media screen and (min-width:769px) and (max-width: 992px) {
+    .top-banner-match {
+        height: 398px;
+        padding: 20px 20px 0 50px;
+    }
+
+    .top-banner-match h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0 85px 0 0;
+    }
+
+    .top-banner-match p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin-bottom: 50px;
+    }
+
+    .banner-img2 img {
+        width: 340px;
+    }
+
+    .ball2 {
+        position: absolute;
+        width: 70px;
+        opacity: .84;
+        top: 380px;
+        left: 785px;
+    }
+
+    /* ---match container--- */
+    .match-container {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+    }
+
+    .side-manu {
+        background: none;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .manu-btn {
+        border: 1px solid #a8a8a8;
+    }
+
+    /* ----matchs style-----  */
+    .matchs {
+        grid-template-columns: repeat(2, 1fr) ;
+        margin-top: 30px;
+    }
+
+    .match {
+        width: auto;
+    }
+
+    .match-container .view-all-btn {
+        display: block;
+        background: #df083e;
+        height: 47px;
+        width: 131px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 47px;
+        margin: 0 auto;
+    }
+
+    .view-all-btn a {
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
     }
 }
