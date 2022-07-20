@@ -58,8 +58,19 @@ main {
     box-shadow: 0px 2px 8px rgb(255, 83, 83);
 }
 
+.banner-img2 img {
+    width: 468px;
+}
+
 .banner-img img {
     width: 529px;
+}
+
+.ball2 {
+    position: absolute;
+    width: 100px;
+    left: 1145px;
+    top: 515px;
 }
 
 .ball {
@@ -68,6 +79,9 @@ main {
     opacity: .84;
     top: 100px;
     left: 510px;
+}
+
+.ball, .ball2 {
     animation: ball 1.5s linear infinite;
 }
 
