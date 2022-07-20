@@ -30,6 +30,7 @@ main {
     line-height: 70px;
     color: #FFFFFF;
     margin: 0 0 10px 0;
+    font-weight: 700;
 }
 
 .banner-text p {
@@ -238,6 +239,20 @@ footer a {
     color: #B9B9B9;
 }
 
+footer ul:nth-child(4) li {
+    background: #969696;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+footer ul:nth-child(4) li a {
+    font-size: 30px;
+    line-height: 50px;
+    color: #054082;
+}
+
 
 /* -------------------------------
     style for match.html file 
@@ -334,4 +349,65 @@ footer a {
 /* --------footer style -------- */
 .match-footer-color {
     background: #084561;
+}
+
+footer ul:nth-child(4) li a {
+    color: #084561;
+}
+
+
+/* -------------------------------
+    Responsive design for mobile 
+  ------------------------------- */
+@media only screen and (max-width:576px) {
+    .top-banner {
+        flex-direction: column;
+    }
+
+    .banner-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 10px 0;
+    }
+
+    .banner-text h1 {
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .banner-text p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .banner-img img {
+        width: 286px;
+    }
+
+    .ball {
+    position: absolute;
+    width: 50px;
+    opacity: .84;
+    top: 165px;
+    left: 155px;
+}
+
+
+
+
+
+
+
+    .blog-container, footer {
+        display: none;
+    }
 }
