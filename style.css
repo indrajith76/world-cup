@@ -253,6 +253,9 @@ footer ul:nth-child(4) li a {
     color: #054082;
 }
 
+.index-footer ul:nth-child(4) li a {
+    color: #054082;
+}
 
 /* -------------------------------
     style for match.html file 
@@ -351,7 +354,7 @@ footer ul:nth-child(4) li a {
     background: #084561;
 }
 
-footer ul:nth-child(4) li a {
+.match-footer ul:nth-child(4) li a {
     color: #084561;
 }
 
