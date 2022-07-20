@@ -118,6 +118,7 @@ main {
     text-align: center;
     line-height: 64px;
     border-radius: 5px;
+    margin: 0 30px 0 30px;
 }
 
 .manu-btn:hover {
@@ -331,6 +332,8 @@ footer ul:nth-child(4) li a {
 
 .team {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     gap: 20px;
 }
 
@@ -648,6 +651,93 @@ footer ul:nth-child(4) li a {
 
 
 /*------------------------------------------
+   Responsive design for Large device(index.html) 
+------------------------------------------ */
+@media screen and (min-width:993px) and (max-width: 1200px) {
+    /* ---top banner--- */
+    .top-banner {
+        height: 500px;
+        width: auto;
+        border-radius: 30px;
+        padding: 20px 30px 0 50px;
+    }
+
+    .banner-img img {
+        width: 481px;
+    }
+
+    .ball {
+        width: 150px;
+        opacity: .84;
+        top: 135px;
+        left: 490px;
+    }
+
+    /* ----blog section style---- */
+    .blog-container {
+        margin: 100px 0 100px 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .blog {
+        width: 240px;
+        height: 330px;
+    }
+
+    .blog-component {
+        margin-top: 10px;
+    }
+
+
+    footer {
+        padding: 80px 130px 80px 130px;
+    }
+}
+
+/*------------------------------------------
+   Responsive design for Extra Large device(index.html) 
+------------------------------------------ */
+@media screen and (min-width:1201px) and (max-width: 1400px) {
+    /* ---top banner--- */
+    .top-banner {
+        height: 580px;
+        width: auto;
+        border-radius: 30px;
+        padding: 20px 30px 0 50px;
+    }
+
+    .banner-img img {
+        width: 556px;
+    }
+
+    .ball {
+        width: 150px;
+        opacity: .84;
+        top: 165px;
+        left: 550px;
+    }
+
+    /* ----blog section style---- */
+    .blog {
+        width: 279px;
+        height: 360px;
+    }
+
+    .blog-component {
+        margin-top: 10px;
+    }
+
+
+    footer {
+        padding: 80px 130px 80px 130px;
+    }
+}
+
+
+
+
+/*------------------------------------------
    Responsive design for X-Small device(match.html) 
 ------------------------------------------ */
 @media screen and (max-width:576px) {
@@ -858,3 +948,78 @@ footer ul:nth-child(4) li a {
         color: #FFFFFF;
     }
 }
+
+/*------------------------------------------
+   Responsive design for Large device(match.html) 
+------------------------------------------ */
+@media screen and (min-width:993px) and (max-width: 1200px) {
+    /* ---match banner--- */
+    .top-banner-match {
+        height: 500px;
+        width: auto;
+        border-radius: 30px;
+        padding: 20px 30px 0 50px;
+    }
+
+    .banner-img2 img {
+        width: 425px;
+    }
+
+    .ball2 {
+        width: 100px;
+        opacity: .84;
+        top: 460px;
+        left: 1025px;
+    }
+
+    /* ----match section style---- */
+    .match-container {
+        margin: 100px 0 100px 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .match {
+        width: 203px;
+        height: 150px;
+        padding: 15px 20px;
+    }
+
+    .team img{
+        width: 37%;
+    }
+
+    .blog-component {
+        margin-top: 10px;
+    }
+
+
+    footer {
+        padding: 80px 130px 80px 130px;
+    }
+}
+
+/*------------------------------------------
+   Responsive design for Extra Large device(index.html) 
+------------------------------------------ */
+@media screen and (min-width:1201px) and (max-width: 1400px) {
+
+    /* ----match section style---- */
+    .match-container {
+        margin: 100px 0 100px 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    .match {
+        width: auto;
+        height: 150px;
+        padding: 15px 20px;
+        grid-column-gap: 27px;
+    }
+
+    footer {
+        padding: 80px 130px 80px 130px;
+    }
+}
+
